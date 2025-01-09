@@ -95,7 +95,7 @@ const experiences = {
       date: 'May 2015 – August 2015',
     },
   ]
-}
+};
 
 // PROJECTS SECTION
 // Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
