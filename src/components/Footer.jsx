@@ -11,7 +11,7 @@ const Footer = (props) => {
         <i className="fas fa-code" /> with <i className="fas fa-heart" /> by{" "}
         <a
           rel="noopener"
-          href="https://github.com/hashirshoaeb"
+          href="https://github.com/alextree"
           aria-label="My GitHub"
         > <span className="badge bg-dark">
             Hashir Shoaib
@@ -20,8 +20,7 @@ const Footer = (props) => {
         using <i className="fab fa-react" />
         <p>
           <small className="text-muted">
-            Project code is open source. Feel free to fork and make your own
-            version.
+            ©2009-2025 Alex Cui All Rights Reserved | San Francisco, California, USA
           </small>
         </p>
       </Container>
