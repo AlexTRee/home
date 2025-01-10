@@ -4,15 +4,19 @@
   <h1 align="center">Alex Cui's Personal Page ✨</h1>
 
   <p align="center">
-    This is a personal static website hosted with GitHub Pages, built to showcase my past experiences and recent works 
+    This is a personal static website built using React + Bootstrap and hosted with GitHub Pages, built to showcase my past experiences and recent works.
     <br/>
     <strong>Site Demo » </strong> 
-    <a href="https://alextree.github.io">alextree.github.io>
+    <a href="https://alextree.github.io/home">alextree.github.io/home>
   </p>
 </p>
 
+# About the project
 
-[![Site preview](/public/social-image.png)](https://hashirshoaeb.github.io)
+### Code was developed by @hashirshoaeb
+### Code was folked from: [https://github.com/hashirshoaeb/home](https://github.com/hashirshoaeb/home)
+
+[![Site preview](/public/social-image.png)](https://alextree.github.io/home)
 
 
 ## Technology stack 🛠️
@@ -30,14 +34,16 @@ Dependencies defined in package.json:
 - Navigation bar (optional)
 - Body
   - Name | Profession
-  - Contact / Follow / Find me / Facebook / LinkedIn / GitHub / Instagram / Email / CodePen
-  - Resume | About me
 - About Me
   - Display picture (optional)
   - About myself, my Interests, Goals and Hobbies
   - Things I'm good at (Skills)
-  - Resume button
-- Recent Projects (using GitHub API) (optional)
+  - LinkedIn connect button
+- Experience
+  - Company logl
+  - Position
+  - Duration
+- Past Projects (using GitHub API) (optional)
 - Leadership (optional)
   - Paragraph
   - Carousel images
@@ -46,7 +52,7 @@ Dependencies defined in package.json:
   - Soft Skills
 - Footer
   - Footer Note (optional)
-  - Copyrights - open source
+  - Copyrights
   - Acknowledgements
 
 # Getting started 💗

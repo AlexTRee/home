@@ -1,4 +1,3 @@
-// Navigation Bar SECTION
 const navBar = {
   show: true,
 };
@@ -20,10 +19,18 @@ const mainBody = {
       url: "https://github.com/alextree",
     },
     {
+      image: "fa-google-scholar",
+      url: "https://scholar.google.com/citations?user=t17-GTQAAAAJ",
+    },
+    {
+      image: "fa-researchgate",
+      url: "http://binf.gmu.edu/tcui/",
+    },
+    {
       image: "fa-instagram",
       url: "https://www.instagram.com/alextree/",
     },
-  ],
+  ]
 };
 
 // ABOUT SECTION
@@ -113,9 +120,15 @@ const repos = {
 // Leadership SECTION
 const leadership = {
   show: false,
-  heading: "Leadership",
-  message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
+  heading: "Pub",
+  message: `
+    - J. Northcott, T. Cui, J. Lyle, et al. <a href="https://www.oncotarget.com/article/28565" target="_blank" rel="noopener noreferrer">Analytical Validation of NeXT Personal®, an Ultra-sensitive Personalized Circulating Tumor DNA Assay</a>. (Oncotarget 2024; 15:200-218)<br />
+    - I. Schillebeeckx, T. Cui, J. Armstrong, et al. Analytical Performance of an Immunoprofiling Assay Based on RNA Models. (J Mol Diagn. 2020 Apr;22(4):555-570)<br />
+    - AM. Ismail, T. Cui, D. Seto, et al. Genomic analysis of a large set of currently- and historically- important human adenovirus pathogens. (Emerg. Microbes Infect. 2018 Feb 7;7(1):10) (Co-first author)<br />
+    - SM. Gordon, T. Cui, et al. Identification of a High-Density Lipoprotein Proteomic Signature Associated with Atherosclerosis Severity in Humans. (Arteriosclerosis, Thrombosis, & Vascular Biology 2016; 36: A15)<br />
+    - B. Veytsman, T. Cui, A. Baranova et al. Distance-based classifiers as potential diagnostic and prediction tools for human diseases. (BMC Genomics 2014, 15(Suppl 12): S10)<br />
+    - A. Naqvi, T. Cui, and A. Grigoriev. Visualization of nucleotide substitutions in the transcriptome. (BMC Genomics 2014, 15(Suppl 4): S9)<br />
+  `,
   images: [
     { 
       img: require("../editable-stuff/alexcui.png"), 
@@ -132,6 +145,98 @@ const leadership = {
     width:"615",
     height:"450"
   }
+};
+
+const publications = {
+  show: true,
+  heading: "Publications",
+  sections: [
+    {
+      subheading: "Peer-reviewed Papers",
+      papers: [
+        {
+          title: "Analytical Validation of NeXT Personal®, an Ultra-sensitive Personalized Circulating Tumor DNA Assay",
+          link: "https://doi.org/10.18632/oncotarget.28565",
+          description: `J. Northcott, <b>T. Cui</b>, J. Lyle, <i>et al.</i> (<b><i>Oncotarget</i></b>, 2024; 15:200-218)`,
+        },
+        {
+          title: "Analytical Performance of an Immunoprofiling Assay Based on RNA Models",
+          link: "https://doi.org/10.1016/j.jmoldx.2020.01.009",
+          description: `I. Schillebeeckx, <b>T. Cui</b>, J. Armstrong, <i>et al.</i> (<b><i>J Mol Diagn.</i></b>, 2020 Apr;22(4):555-570)`,
+        },
+        {
+          title: "Genomic analysis of a large set of currently- and historically- important human adenovirus pathogens",
+          link: "https://doi.org/10.1038/s41426-017-0004-y",
+          description: `AM. Ismail, <b>T. Cui</b>, D. Seto, <i>et al.</i> (<b><i>Emerg. Microbes Infect.</i></b>, 2018 Feb 7;7(1):10)<b>(Co-first author)</b>`,
+        },
+        {
+          title: "Identification of a High-Density Lipoprotein Proteomic Signature Associated with Atherosclerosis Severity in Humans",
+          link: "https://doi.org/10.1161/atvb.36.suppl_1.15",
+          description: `SM. Gordon, <b>T. Cui</b>, <i>et al.</i> (<b><i>Arteriosclerosis, Thrombosis, & Vascular Biology</i></b>, 2016; 36: A15)`,
+        },
+        {
+          title: "Distance-based classifiers as potential diagnostic and prediction tools for human diseases",
+          link: "https://doi.org/10.1186/1471-2164-15-S12-S10",
+          description: `B. Veytsman, <b>T. Cui</b>, and A. Baranova. (<b><i>BMC Genomics</i></b>, 2014, 15(Suppl 12),S10)`,
+        },
+        {
+          title: "Visualization of nucleotide substitutions in the transcriptome",
+          link: "https://doi.org/10.1186/1471-2164-15-S4-S9",
+          description: `B. Veytsman, <b>T. Cui</b>, and A. Baranova. (<b><i>BMC Genomics</i></b>, 2014, 15(Suppl 12),S10)`,
+        },
+      ],
+    },
+    {
+      subheading: "Conference Posters & Abstracts",
+      papers: [
+        {
+          title: "Analytic validation of an ultra-sensitive tumor-informed circulating tumor DNA assay based on whole genome sequencing",
+          link: "https://www.personalis.com/wp-content/uploads/2024/04/AACR24_PER_Science-Poster_NP_Analytical_Validation.pdf",
+          description: `J. Northcott, <b>T. Cui</b>, J. Lyle, <i>et al.</i> (<b><i>AACR. Cancer Res.</i></b>, 2024 84 (6_Supplement): 5034)`,
+        },
+        {
+          title: "RNA-Based Multidimensional Biomarker Discovery",
+          link: "https://hopscotch.key4events.com/AbstractList.aspx?e=141&preview=1&aig=-1&ai=8829",
+          description: `N. Lafranzo, K. Flanagan, and <b>T. Cui</b> (<b><i>IUPAC Paris</i></b>, 2019, CL024)`,
+        },
+        {
+          title: "PreDist: A distance-based model as potential diagnostic and prediction classifiers for human diseases",
+          link: "https://www.nhlbi.nih.gov/events/2017/systems-biology-conference-2017",
+          description: `<b>T. Cui</b>, A. Baranova, <i>et al.</i> (<b><i>NHLBI Systems Biology Conference</i></b>, 2017, 15)`,
+        },
+        {
+          title: "Distance-based profiling aids in evaluation of ageing-related phenomena",
+          link: "https://mccmb.belozersky.msu.ru/2015/proceedings/abstracts/47.pdf",
+          description: `L. Wang, <b>T. Cui</b>, A. Baranova, <i>et al.</i> (<b><i>MCCMB. J. Bioinform. Comput. Biol.</i></b>, 2016, 14(2), 47)`,
+        },
+      ],
+    },
+    {
+      subheading: "Scholarly Works",
+      papers: [
+        {
+          title: "PreDist: A distance-based model as potential diagnostic and prediction classifiers for human diseases",
+          link: "https://www.proquest.com/openview/05547de304d96358af963b25c677a273",
+          description: `<b>T. Cui</b> and A. Baranova. (<b>[PhD. Dissertation]</b> Nov. 2018)`,
+        },
+        {
+          title: "Development of a prototype visualization approach for next-generation sequencing technologies using Genome Navigator (GN) framework",
+          link: "https://rucore.libraries.rutgers.edu/rutgers-lib/37287",
+          description: `<b>T. Cui</b> and A. Grigoriev. (<b>[Master's Thesis]</b> May 2012)`,
+        },
+      ],
+    },
+    {
+      subheading: "Book Chapters",
+      papers: [
+        {
+          title: "Practical Detection of Biological Age: Why It Is not a Trivial Task.",
+          link: "https://www.proquest.com/openview/05547de304d96358af963b25c677a273",
+          description: `B. Veytsman, <b>T. Cui</b> and A. Baranova. (In <b>A. Moskalev (eds) </b> <b><i>Biomarkers of Human Aging. Healthy Ageing and Longevity vol. 10</i></b>, Springer, Cham. 2019)`,
+        },
+      ],
+    },
+  ],
 };
 
 // SKILLS SECTION
@@ -165,7 +270,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm always excited about new technologies and novel approaches to tackle CANCER.%0D%0AIf you have new positions available in the Binformatics/Data Engineering space, or if you just want to say Hi and ask questions, please feel free to email me at",
+    "I'm always excited about new technologies and novel approaches to tackle CANCER. If you have new positions available in the Binformatics/Data Engineering space, or if you just want to say Hi and ask questions, please feel free to email me at",
   email: "alextreecn2 [at] gmail.com",
 };
 
@@ -175,4 +280,4 @@ const getInTouch = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, experiences, repos, skills, leadership, getInTouch };
+export { navBar, mainBody, about, experiences, publications, repos, skills, leadership, getInTouch };

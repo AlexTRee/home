@@ -3,7 +3,7 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { mainBody, experiences, repos, about, skills } from "../editable-stuff/config.js";
+import { mainBody, experiences, repos, publications, skills, about } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
 
 const Navigation = React.forwardRef((props, ref) => {
@@ -13,6 +13,7 @@ const Navigation = React.forwardRef((props, ref) => {
   const navbarMenuRef = React.useRef();
   const navbarDimensions = useResizeObserver(navbarMenuRef);
   const navBottom = navbarDimensions ? navbarDimensions.bottom : 0;
+
   useScrollPosition(
     ({ prevPos, currPos }) => {
       if (!navbarDimensions) return;
@@ -58,11 +59,19 @@ const Navigation = React.forwardRef((props, ref) => {
             </NavLink>
           )}
           {repos.show && (
-
             <NavLink
+              className="nav-item lead"
               href={process.env.PUBLIC_URL + "/#projects"}
             >
               Projects
+            </NavLink>
+          )}
+          {publications?.show && (
+            <NavLink
+              className="nav-item lead"
+              href={process.env.PUBLIC_URL + "/#publications"}
+            >
+              Publications
             </NavLink>
           )}
           {skills.show && (
