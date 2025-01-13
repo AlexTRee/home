@@ -57,6 +57,7 @@ const about = {
   resume: "https://www.linkedin.com/in/tiangecui/",
 };
 
+
 const experiences = {
   show: true,
   heading: "Experiences",
@@ -64,45 +65,214 @@ const experiences = {
     {
       role: 'Sr. Bioinformatics Scientist',
       companylogo: require('../assets/img/psnl.png'),
-      date: 'Febrary 2022 – January 2024',
+      date: 'February 2022 – January 2024',
+      companyname: "Personalis, Inc.",
+      description: (
+        <>
+          <ul>
+            <li>
+              Worked closely with bench scientists under Assay R&D dept. to troubleshoot issues and analyze data.
+              <br />
+              <u>Main achievements:</u>
+              <ul>
+                <li>Built a visualization pipeline using Nextflow for key NGS metrics to QC sequencing data quality</li>
+                <li>Completed the analytical validation of the cfDNA-based MRD assay - NeXT Personal®</li>
+                <li>Stratified Immune Checkpoint Inhibitors (ICI) treated patients via ctDNA signals</li>
+                <li>
+                  Improved a background error suppression model and the filtering strategy for somatic variant calling
+                  and tumor-informed panel design; simplified panel QC with consolidated PON variants
+                </li>
+                <li>Validated single-cell RNA-seq TCR/BCR immune repertoire results against ImmunoID NeXT®</li>
+                <li>Generated versioning documentation of the workflows and tools for regulatory review</li>
+              </ul>
+            </li>
+            <li>
+              Led Advanced Technology group under Assay R&D dept. to scout and validate new NGS technologies.
+              <br />
+              <u>Main achievements:</u>
+              <ul>
+                <li>Full-cycle performance evaluation of Ultima Genomics (UG)’ new sequencer UG100 for WGS</li>
+                <li>Developed a workflow wrapper for UG Whole Genome Methylation Sequencing</li>
+                <li>Developed an Ultima Genomics Analysis Toolkit (UGAT) for UG data on HPC and Google Cloud</li>
+                <li>Evaluated various commercial FFPE Repair Kits and Enzymatic Fragmentation Kits</li>
+                <li>
+                  Evaluated novel single-duplex DNA sequencing and CRISPR-based genome depletion methods
+                </li>
+                <li>Evaluated and compared Sentieon and Google DeepVariant variant calling pipelines</li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
     },
     {
       role: 'Principal Bioinformatics Scientist',
       companylogo: require('../assets/img/shihua.png'),
       date: 'June 2021 – December 2021',
+      companyname: "Shihua Medical, Inc.",
+      description: (
+        <>
+          <ul>
+            <li>Worked as the founding bioinformatics scientist (reported to the CSO)</li>
+            <li>
+              Built the company’s prototype bioinformatics and data analytics cloud
+              computing infrastructure and a whole suite of computational analysis
+              pipelines for personalized targeted NGS panels and automated report
+              generation for breast cancer patients.
+            </li>
+          </ul>
+        </>
+      ),
     },
     {
       role: 'Bioinformatics Engineer II',
       companylogo: require('../assets/img/sgmo.png'),
       date: 'July 2020 – June 2021',
+      companyname: "Sangamo Therapeutics, Inc.",
+      description: (
+        <>
+          <ul>
+            <li>
+              Supported Genome Engineering group for genomic engineering and data mining.
+              <br />
+              <ul>
+                <li>
+                  Developed an automated analysis pipeline for Affymetrix Clariom D microarray assay with streamlined differential gene expression analysis and volcano plot visualization for top gene.
+                </li>
+                <li>
+                  Designed over 20 lead candidates with tissue-specific gene expressions to target the pathogenic mutations as a therapeutic strategy for several CNS diseases.
+                </li>
+                <li>
+                  Explored regulatory elements with the combination of ChIP-seq and ATAC-seq data.
+                </li>
+                <li>
+                  Curated and integrated bulk and single-cell RNA-seq data from public data banks (e.g., GTEx, BrainMap, DropViz, TCGA, etc.), performed data mining of regulatory element (RE) databases (e.g., ENCODE, FANTOM5, ORegAnno, CATlas, etc.) to find REs in enhancers and promoters.
+                </li>
+                <li>
+                  Developed workflows for batch processing tasks on SevenBridges platform for lab scientists.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
     },
     {
       role: 'Computational Scientist',
       companylogo: require('../assets/img/cofactor.png'),
       date: 'July 2018 – May 2020',
+      companyname: "Cofactor Genomics, LLC.",
+      description: (
+        <>
+          <ul>
+            <li>
+              Led the analytical validation of the RNASeq-based clinical immuno-profiling ImmunoPrism® assay.
+              <br />
+              <ul>
+                <li>
+                  Applied machine learning regression algorithms to build Health Expression Models for eight immune cells and improve the performance of Predictive Immune Modeling for ImmunoPrism®.
+                </li>
+                <li>
+                  Mining databases (e.g., GTEx, CCLE, GDC, Human Cell Atlas, etc.) to refine basis matrix genes.
+                </li>
+                <li>
+                  Applied multidimensional biomarker approach to predict patients’ ICI treatment responses.
+                </li>
+                <li>
+                  Integrated and maintained both development and production pipelines for bulk-/scRNA-seq analysis, cloud computing platforms (AWS and Azure), and company GitHub repos.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
     },
     {
       role: 'Computational Biology Research Intern',
       companylogo: require('../assets/img/vrtx.png'),
       date: 'May 2016 – August 2016',
+      companyname: "Vertex Pharmaceuticals, Inc.",
+      description: (
+        <>
+          <ul>
+            <li>
+              Worked at Modeling & Informatics group to investigate a ligand-based drug design software FTrees:
+            </li>
+            <ul>
+              <li>
+                Integrated and automated the workflow of FTrees with Vertex’s internal software and chemical database to enable medicinal chemists to find similar compounds with novel 3D structures.
+              </li>
+              <li>
+                Generated a new knowledge space for FTrees to query using in-house customized reagents.
+              </li>
+              <li>
+                Developed two wrappers for FTrees that were included in the VSL (Vertex Scripting Library).
+              </li>
+            </ul>
+          </ul>
+        </>
+      ),
     },
     {
       role: 'Bioinformatics Research Intern',
       companylogo: require('../assets/img/regn.png'),
       date: 'May 2015 – August 2015',
+      companyname: "Regeneron Pharmaceuticals, Inc.",
+      description: (
+        <>
+          <ul>
+            <li>
+              Worked at Velocigene dept. and BiCS group to help bench scientists develop:
+            </li>
+            <ul>
+              <li>
+                A web portal and GUI for Velocigene's CRISPR-Cas9 mediated Amplicon-Seq analysis pipeline.
+              </li>
+              <li>
+                A string-matching script to filter and format BLAT search results for recombination oligos, TaqMan assays, and mouse genetic modifications, with a final success rate of 98.3%.
+              </li>
+              <li>
+                A sync method to sync tracks between Velociweb and UCSC Genome Browser.
+              </li>
+              <li>A complete data migration for REGN’s legacy database.</li>
+              <li>
+                Maintenance of REGN’s production servers and websites (Velociweb and REGN mirror of UCSC Genome Browser), and the visualizations for gene targeting constructs.
+              </li>
+            </ul>
+          </ul>
+        </>
+      ),
     },
     {
       role: 'Bioinformatics Analyst',
       companylogo: require('../assets/img/ru.png'),
       date: 'May 2012 – May 2013',
+      companyname: "Center of Computational and Integrative Biology, Rutgers University",
+      description: (
+        <>
+          <ul>
+            <li>
+              Developed a Java-based genome browser, Genome Navigator (GN) for NGS data visualization.
+            </li>
+            <ul>
+              <li>
+                Applied GN to collaboration projects (such as <i>N. Crassa</i> circadian rhythm study, <i>Drosophila Melanogaster</i> SNPs discovery, miRNA secondary structure visualization, etc.)
+              </li>
+            </ul>
+          </ul>
+        </>
+      ),
     },
     {
       role: 'Research Technician',
       companylogo: require('../assets/img/ncpc.png'),
-      date: 'May 2015 – August 2015',
+      date: 'September 2007 – December 2008',
+      companyname: "New Drug R&D Center, North China Pharmaceuticals Corp.",
+      description: "- R&D on the drug candidates, including the expression vector construction of recombinant Human Serum Albumin-EPO (HSA-EPO) fusion protein drugs. Transformation and screening of yeast strains"
     },
-  ]
+  ],
 };
+
 
 // PROJECTS SECTION
 // Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
@@ -269,8 +439,9 @@ const skills = {
 const getInTouch = {
   show: true,
   heading: "Get In Touch",
-  message:
-    "I'm always excited about new technologies and novel approaches to tackle CANCER. If you have new positions available in the Binformatics/Data Engineering space, or if you just want to say Hi and ask questions, please feel free to email me at",
+  message: (
+    <>
+      I'm always excited about new technologies and novel approaches to tackle{" "}<s>CANCER</s>. If you have new positions available in the Bioinformatics/Data Engineering space, or if you just want to say Hi and ask questions, please feel free to email me at</>),
   email: "alextreecn2 [at] gmail.com",
 };
 
