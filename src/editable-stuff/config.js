@@ -113,7 +113,7 @@ const repos = {
   show: true,
   heading: "Past Projects",
   gitHubUsername: "alextree", //i.e."johnDoe12Gh"
-  reposLength: 4,
+  reposLength: 0,
   specificRepos: ["home", "ML_projects", "ExACvcf", "nullfunction"],
 };
 
