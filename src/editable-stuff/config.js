@@ -113,8 +113,8 @@ const repos = {
   show: true,
   heading: "Past Projects",
   gitHubUsername: "alextree", //i.e."johnDoe12Gh"
-  reposLength: 2,
-  specificRepos: ["contedu", "ExACvcf"],
+  reposLength: 4,
+  specificRepos: ["home", "ML_projects", "ExACvcf", "nullfunction"],
 };
 
 // Leadership SECTION
