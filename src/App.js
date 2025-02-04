@@ -6,7 +6,7 @@ import {
   mainBody,
   about,
   repos,
-  leadership,
+  certifications,
   skills,
   getInTouch,
   experiences,
@@ -21,7 +21,7 @@ import Skills from "./components/home/Skills";
 import Experience from "./components/home/Experience";
 import Publication from "./components/home/Publication.jsx";
 import GetInTouch from "./components/home/GetInTouch.jsx";
-import Leadership from "./components/home/Leadership.jsx";
+import Certificate from "./components/home/certificate.jsx";
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
 
@@ -63,12 +63,12 @@ const Home = React.forwardRef((props, ref) => {
           specfic={repos.specificRepos}
         />
       )}
-      {leadership.show && (
-        <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
-          img={leadership.images}
-          imageSize={leadership.imageSize}
+      {certifications.show && (
+        <Certificate
+          heading={certifications.heading}
+          message={certifications.message}
+          img={certifications.images}
+          imageSize={certifications.imageSize}
         />
       )}
       {skills.show && (

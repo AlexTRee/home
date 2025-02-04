@@ -73,32 +73,25 @@ const experiences = {
             <li>
               Worked closely with bench scientists under Assay R&D dept. to troubleshoot issues and analyze data.
               <br />
-              <u>Main achievements:</u>
+              <u>Projects:</u>
               <ul>
-                <li>Built a visualization pipeline using Nextflow for key NGS metrics to QC sequencing data quality</li>
-                <li>Completed the analytical validation of the cfDNA-based MRD assay - NeXT Personal®</li>
-                <li>Stratified Immune Checkpoint Inhibitors (ICI) treated patients via ctDNA signals</li>
-                <li>
-                  Improved a background error suppression model and the filtering strategy for somatic variant calling
-                  and tumor-informed panel design; simplified panel QC with consolidated PON variants
-                </li>
-                <li>Validated single-cell RNA-seq TCR/BCR immune repertoire results against ImmunoID NeXT®</li>
-                <li>Generated versioning documentation of the workflows and tools for regulatory review</li>
+                <li>Development of Nextflow-based WGS QC visualization pipeline.</li>
+                <li>Analytical validation of the cfDNA-based MRD assay - NeXT Personal®.</li>
+                <li>Performance improvement for NeXT Personal®.</li>
+                <li>Development of ImmunoID NeXT® TCR/BCR immune repertoire.</li>
               </ul>
             </li>
             <li>
               Led Advanced Technology group under Assay R&D dept. to scout and validate new NGS technologies.
               <br />
-              <u>Main achievements:</u>
+              <u>Projects:</u>
               <ul>
                 <li>Full-cycle performance evaluation of Ultima Genomics (UG)’ new sequencer UG100 for WGS</li>
-                <li>Developed a workflow wrapper for UG Whole Genome Methylation Sequencing</li>
-                <li>Developed an Ultima Genomics Analysis Toolkit (UGAT) for UG data on HPC and Google Cloud</li>
-                <li>Evaluated various commercial FFPE Repair Kits and Enzymatic Fragmentation Kits</li>
-                <li>
-                  Evaluated novel single-duplex DNA sequencing and CRISPR-based genome depletion methods
-                </li>
-                <li>Evaluated and compared Sentieon and Google DeepVariant variant calling pipelines</li>
+                <li>Development of Ultima Genomics Analysis Toolkit (UGAT) for UG data.</li>
+                <li>Development of workflow for UG Whole Genome Methylation Sequencing.</li>
+                <li>Evaluation of various FFPE Repair kits and Enzymatic Fragmentation kits.</li>
+                <li>Evaluation of various novel sequencing methods.</li>
+                <li>Evaluation of various somatic variant calling pipelines.</li>
               </ul>
             </li>
           </ul>
@@ -137,13 +130,13 @@ const experiences = {
               <br />
               <ul>
                 <li>
-                  Developed an automated analysis pipeline for Affymetrix Clariom D microarray assay with streamlined differential gene expression analysis and volcano plot visualization for top gene.
-                </li>
-                <li>
                   Designed over 20 lead candidates with tissue-specific gene expressions to target the pathogenic mutations as a therapeutic strategy for several CNS diseases.
                 </li>
                 <li>
-                  Explored regulatory elements with the combination of ChIP-seq and ATAC-seq data.
+                  Explored targeted regulatory elements with the combination of ChIP-seq and ATAC-seq data.
+                </li>
+                <li>
+                  Developed an automated analysis pipeline for Affymetrix Clariom D microarray assay with streamlined differential gene expression analysis and volcano plot visualization for top gene.
                 </li>
                 <li>
                   Curated and integrated bulk and single-cell RNA-seq data from public data banks (e.g., GTEx, BrainMap, DropViz, TCGA, etc.), performed data mining of regulatory element (RE) databases (e.g., ENCODE, FANTOM5, ORegAnno, CATlas, etc.) to find REs in enhancers and promoters.
@@ -170,7 +163,7 @@ const experiences = {
               <br />
               <ul>
                 <li>
-                  Applied machine learning regression algorithms to build Health Expression Models for eight immune cells and improve the performance of Predictive Immune Modeling for ImmunoPrism®.
+                  Developed a machine learning regression model (SVR) for cell mixture deconvolution of eight immune cell types and improve the performance of Predictive Immune Modeling for ImmunoPrism® assay.
                 </li>
                 <li>
                   Mining databases (e.g., GTEx, CCLE, GDC, Human Cell Atlas, etc.) to refine basis matrix genes.
@@ -281,41 +274,12 @@ const experiences = {
 //      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
-  heading: "Past Projects",
-  gitHubUsername: "alextree", //i.e."johnDoe12Gh"
+  heading: "Past GitHub Projects",
+  gitHubUsername: "alextree",
   reposLength: 0,
   specificRepos: ["home", "ML_projects", "ExACvcf", "nullfunction"],
 };
 
-// Leadership SECTION
-const leadership = {
-  show: false,
-  heading: "Pub",
-  message: `
-    - J. Northcott, T. Cui, J. Lyle, et al. <a href="https://www.oncotarget.com/article/28565" target="_blank" rel="noopener noreferrer">Analytical Validation of NeXT Personal®, an Ultra-sensitive Personalized Circulating Tumor DNA Assay</a>. (Oncotarget 2024; 15:200-218)<br />
-    - I. Schillebeeckx, T. Cui, J. Armstrong, et al. Analytical Performance of an Immunoprofiling Assay Based on RNA Models. (J Mol Diagn. 2020 Apr;22(4):555-570)<br />
-    - AM. Ismail, T. Cui, D. Seto, et al. Genomic analysis of a large set of currently- and historically- important human adenovirus pathogens. (Emerg. Microbes Infect. 2018 Feb 7;7(1):10) (Co-first author)<br />
-    - SM. Gordon, T. Cui, et al. Identification of a High-Density Lipoprotein Proteomic Signature Associated with Atherosclerosis Severity in Humans. (Arteriosclerosis, Thrombosis, & Vascular Biology 2016; 36: A15)<br />
-    - B. Veytsman, T. Cui, A. Baranova et al. Distance-based classifiers as potential diagnostic and prediction tools for human diseases. (BMC Genomics 2014, 15(Suppl 12): S10)<br />
-    - A. Naqvi, T. Cui, and A. Grigoriev. Visualization of nucleotide substitutions in the transcriptome. (BMC Genomics 2014, 15(Suppl 4): S9)<br />
-  `,
-  images: [
-    { 
-      img: require("../editable-stuff/alexcui.png"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
-    },
-    { 
-      img: require("../editable-stuff/alexcui.png"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
-    },
-  ],
-  imageSize: {
-    width:"615",
-    height:"450"
-  }
-};
 
 const publications = {
   show: true,
@@ -409,6 +373,94 @@ const publications = {
   ],
 };
 
+// Certifications SECTION
+const certifications = {
+  show: true,
+  heading: "Certifications",
+  message: `
+  <h3>Machine Learning</h3>
+  <ul>
+    <li>
+      IBM <br />
+      <a href="https://www.coursera.org/account/accomplishments/certificate/1TXVIM8MCWHF" target="_blank" rel="noopener noreferrer">
+        Supervised Machine Learning: Regression
+      </a>
+    </li>
+    <li>
+      IBM <br />
+      <a href="https://www.coursera.org/account/accomplishments/certificate/AJA5EQOPMF40" target="_blank" rel="noopener noreferrer">
+        Supervised Machine Learning: Classification
+      </a>
+    </li>
+    <li>
+      IBM <br />
+      <a href="https://www.coursera.org/account/accomplishments/certificate/6MR6TBAP2AEK" target="_blank" rel="noopener noreferrer">
+        Exploratory Data Analysis for Machine Learning
+      </a>
+    </li>
+  </ul>
+
+  <h3>Data Engineering</h3>
+  <ul>
+    <li>
+      IBM <br />
+      <a href="https://www.coursera.org/account/accomplishments/certificate/AM7ER4N8TW8D" target="_blank" rel="noopener noreferrer">
+        Databases and SQL for Data Science
+      </a>
+    </li>
+    <li>
+      NASBA <br />
+      <a href="https://www.linkedin.com/learning/certificates/5f3ac97b2fc54a90e3b59c1cfd8d61132a9b238f230fbd961e45fe1b444caa37" target="_blank" rel="noopener noreferrer">
+        SQL Essential Training
+      </a>
+    </li>
+    <li>
+      John Hopkins University <br />
+      <a href="https://www.coursera.org/account/accomplishments/certificate/VYE55VWKA8V3" target="_blank" rel="noopener noreferrer">
+        Python for Genomic Data Science
+      </a>
+    </li>
+  </ul>
+  `,
+  images: [
+    { 
+      img: require("../assets/img/IBM_ML_regression_cert.png"), 
+      label: "", 
+      paragraph: "" 
+    },
+    { 
+      img: require("../assets/img/IBM_ML_classification_cert.png"), 
+      label: "", 
+      paragraph: "" 
+    },
+    { 
+      img: require("../assets/img/IBM_ML_EDA_cert.png"), 
+      label: "", 
+      paragraph: "" 
+    },
+    { 
+      img: require("../assets/img/IBM_DB_SQL_Python_cert.png"), 
+      label: "", 
+      paragraph: "" 
+    },
+    { 
+      img: require("../assets/img/NASBA_SQL_Essential_Training_cert.png"), 
+      label: "", 
+      paragraph: "" 
+    },
+    { 
+      img: require("../assets/img/JHU_Python_for_Genomic_Data_Science_cert.png"), 
+      label: "", 
+      paragraph: "" 
+    },
+  ],
+  imageSize: {
+    width:"529",
+    height:"450"
+  }
+};
+
+
 // SKILLS SECTION
 const skills = {
   show: true,
@@ -441,8 +493,11 @@ const getInTouch = {
   heading: "Get In Touch",
   message: (
     <>
-      I'm always excited about new technologies and novel approaches to tackle{" "}<s>CANCER</s>. If you have new positions available in the Bioinformatics/Data Engineering space, or if you just want to say Hi and ask questions, please feel free to email me at</>),
-  email: "alextreecn2 [at] gmail.com",
+      I'm always excited about new technologies and novel approaches to tackle{" "}<s>CANCER</s>. If you have new positions available in the Bioinformatics/Data Engineering space, or if you just want to say Hi and ask questions,<br />
+      please feel free to contact me at
+    </>
+  ),
+  email: "alextreecn1 [at] gmail.com",
 };
 
 
@@ -451,4 +506,4 @@ const getInTouch = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, experiences, publications, repos, skills, leadership, getInTouch };
+export { navBar, mainBody, about, experiences, publications, repos, skills, certifications, getInTouch };
